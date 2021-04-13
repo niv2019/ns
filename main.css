@@ -1,0 +1,132 @@
+body {
+    /* background: linear-gradient(to  right, rgb(0, 217, 255), rgb(15, 233, 222), rgb(5, 236, 179)); */
+    background: var(--bg);
+    /* color: black; */
+    color: var(--fontColor);
+    font-family: helvetica, arial, sans-serif;
+    margin: 2em;
+    display: flex; /*flexbox, center and align things in css*/
+    justify-content: center; /*center the whole div*/
+    align-items: center; /*align the div vertically*/
+    height: 100vh;
+    text-align:center; /*centering the text whithin the div*/
+    
+}
+
+h1 {
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4{
+    font-size: 20px;
+    text-align: left;
+    
+}
+
+h5 {
+    font-size: 25px;
+    text-align: left;
+}
+
+h6{
+    font-size: 25px;
+    font-style: normal;
+    text-align: center;
+}
+ul {
+   padding: 10px;
+}
+
+li {
+    display: inline;
+    padding: 0px 15px 15px 0px;
+}
+p {
+    font-size: 22px;
+    max-width: 30em; /*more towards the center, takes up less space*/
+    color: black; /*affects the colour of what's in the paragraph*/
+}
+
+input {
+    border: 0;
+    padding: 10px;
+    font-size: 18px;
+}
+
+img {
+    height: 300px;
+    border-radius: 25px/*borders around imgae*/ /*50px to make a circle*/
+}
+
+
+div{
+    border: 5px solid #0d8b94; /*affects all that is in the div in html*/
+    padding: 16px; /*plus loin des mots*/
+    box-shadow: 8px 8px #11a9b4ab; /*offset deptheOfBoxShadow*/ /*3d effect*/
+    /* box-shadow: 8px 8px #34bdbd; offset deptheOfBoxShadow 3d effect */
+    border-radius: 10px; /*curvers the points*/
+}
+
+a { /*for all links*/
+    text-decoration: none; /*no underline*/
+    /* color:#00a666; */
+    color: white;
+}
+
+
+:root{
+    --black: #000000;
+    --white: #ffffff;
+    --turquoise: #00c3ffea;
+    --new: #e0ac1c;
+    --new2: #07c1faec;
+}
+
+.light-theme {
+      /* --bg: var(--turquoise);  */
+    --bg: linear-gradient(to  right, rgb(0, 217, 255), rgb(15, 233, 222), rgb(5, 236, 179));
+    --fontColor: var(--black); 
+    /* background: linear-gradient(to  right, rgb(0, 217, 255), rgb(15, 233, 222), rgb(5, 236, 179)); */
+    /* color: black;
+    font-family: helvetica, arial, sans-serif;
+    margin: 2em;
+    display: flex; /*flexbox, center and align things in css*/
+    /* justify-content: center; /*center the whole div*/
+    /*align-items: center; /*align the div vertically*/
+    /*height: 100vh;
+    text-align:center; centering the text whithin the div */
+    /* --bg: var(to  right, rgb(0, 217, 255), rgb(15, 233, 222), rgb(5, 236, 179)); */
+    --btnBg: var(--new);
+    --btnFontColor: var(--white);
+} 
+  
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--turquoise);
+    --btnBg: var(--new);
+    --btnFontColor: var(--black);
+}
+.btn {
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.btn {
+    position: absolute;
+    top: 670px; /*was 300px*/
+    left: 425px; /*was 350px*/
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+}
+
+.btn:focus { 
+    outline-style: none;
+}
